@@ -1,0 +1,61 @@
+#itemDrawer {
+  width: 300px;
+  max-height: 300px;
+  position: absolute;
+  top: 140px;
+  right: 20px;
+  margin: -70px 0 0 -150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index:1000;
+}
+
+#drawerHeader:after {
+  content: "\f056";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  position: absolute;
+  font-size: 30px;
+  color: lightblue;
+  top: 0px;
+  right: 5px;
+}
+
+.selectable-Item {
+  cursor: pointer;
+}
+
+.selectable-Item:Hover {
+  color: #265a88;
+}
+
+#drawerBody {
+  height: 215px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.erasable {
+  font-size: 16px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.erasable:after {
+  content: "\f057";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  float: right;
+  color: lightblue;
+  margin-top: -25px;
+}
+
+.price {
+  padding-right: 25px;
+  float: right;
+}
+
+#drawerFooter {
+  text-align: right;
+}
